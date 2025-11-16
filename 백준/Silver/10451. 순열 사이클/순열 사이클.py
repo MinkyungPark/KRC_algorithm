@@ -7,7 +7,7 @@ def dfs(u):
 
 for _ in range(T):
     N = int(input())
-    graph = {i+1: p for i, p in enumerate(list(map(int, input().split())))}
+    graph = [0] + list(map(int, input().split()))
     visited = set()
     cnt = 0
     for i in range(1, N + 1):
